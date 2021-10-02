@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="thumb2-zero-two-manga-anime-characters-pink-hair-darling-in-the-franxx.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="thumb2-zero-two-manga-anime-characters-pink-hair-darling-in-the-franxx.jpg" />
+  </ItemGroup>
+
+</Project>

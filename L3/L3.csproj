@@ -1,0 +1,71 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1401.png" />
+    <None Remove="2LocrGFa5x4.jpg" />
+    <None Remove="301.jpg" />
+    <None Remove="Desktop.png" />
+    <None Remove="Folder 3D.png" />
+    <None Remove="Folder Blue.png" />
+    <None Remove="Folder Desktop.png" />
+    <None Remove="Folder Documents.png" />
+    <None Remove="Folder Downloads.png" />
+    <None Remove="Folder Links 2.png" />
+    <None Remove="Folder OneDrive.png" />
+    <None Remove="Folder Open.png" />
+    <None Remove="Folder Pictures.png" />
+    <None Remove="Hardrive Windows.png" />
+    <None Remove="iAbthNsLZ-g.jpg" />
+    <None Remove="Libray Pictures.png" />
+    <None Remove="Link.png" />
+    <None Remove="Lock.png" />
+    <None Remove="Notes.png" />
+    <None Remove="pngwing.com — копия %282%29.png" />
+    <None Remove="pngwing.com — копия — копия — копия.png" />
+    <None Remove="pngwing.com — копия — копия.png" />
+    <None Remove="pngwing.com — копия.png" />
+    <None Remove="pngwing.com.png" />
+    <None Remove="Search.png" />
+    <None Remove="Tasks.png" />
+    <None Remove="zf.gif" />
+    <None Remove="Снимок экрана %281%29.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1401.png" />
+    <Resource Include="2LocrGFa5x4.jpg" />
+    <Resource Include="301.jpg" />
+    <Resource Include="Desktop.png" />
+    <Resource Include="Folder 3D.png" />
+    <Resource Include="Folder Blue.png" />
+    <Resource Include="Folder Desktop.png" />
+    <Resource Include="Folder Documents.png" />
+    <Resource Include="Folder Downloads.png" />
+    <Resource Include="Folder Links 2.png" />
+    <Resource Include="Folder OneDrive.png" />
+    <Resource Include="Folder Open.png" />
+    <Resource Include="Folder Pictures.png" />
+    <Resource Include="Hardrive Windows.png" />
+    <Resource Include="iAbthNsLZ-g.jpg" />
+    <Resource Include="Libray Pictures.png" />
+    <Resource Include="Link.png" />
+    <Resource Include="Lock.png" />
+    <Resource Include="Notes.png" />
+    <Resource Include="pngwing.com — копия (2).png" />
+    <Resource Include="pngwing.com — копия — копия — копия.png" />
+    <Resource Include="pngwing.com — копия — копия.png" />
+    <Resource Include="pngwing.com — копия.png" />
+    <Resource Include="pngwing.com.png" />
+    <Resource Include="Search.png" />
+    <Resource Include="Tasks.png" />
+    <Resource Include="zf.gif" />
+    <Resource Include="Снимок экрана (1).png" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="L4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1080" Width="1920">
+    <Grid>
+        <Image Source="/thumb2-zero-two-manga-anime-characters-pink-hair-darling-in-the-franxx.jpg"/>
+        <Path x:Name="ШеяПлечи" Data="M838,854.04 L873.5,925.57998 872.99286,959.89927 822.27857,992.0924 751.47246,1036.0128 637.00864,1054.2494 615.37216,1057.7236 1479.6485,1060.2109 1291.4351,986.47795 1220.1649,936.64516 1155.9213,862.38453 1116.7729,779.32988 1091.6778,669.26759 1090.674,621.78609 1084.6511,590.92959 856.78732,764.24951 z" Fill="#FFF5ADAC" HorizontalAlignment="Left" Height="479" Margin="616,587,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="862"/>
+        <Path x:Name="Подбородок__тень" Data="M984,747.04 L962.5,791.57998 926.15476,823.78731 900.27666,843.99742 875.56316,858.23745 849.72075,871.44456 830.03321,875.85706 809.40366,881.22282 797.79757,884.64016 780.1838,858.21706 z" Fill="#FFDE9689" HorizontalAlignment="Left" Height="144" Margin="780,747,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="204"/>
+        <Path x:Name="Голова" Opacity="0.2" Data="M736,185.04 L931.5,237.57999 1049.3013,363.0217 1098.8489,497.04192 1103.347,528.18288 1081.8267,616.47313 1050.7974,685.95555 1007.7567,732.74049 966.71797,763.7539 903.65839,811.44622 839.59787,849.28588 795.16835,873.18887 787.5487,877.28822 761.52411,879.77873 739.50331,859.73029 660.4286,792.1182 599.93973,726.46588 571.41662,671.59229 551.88246,604.96009 539.37191,516.7704 541.87622,447.19854 546.88488,401.14392 568.92298,298.25595 638.0425,240.44271 z" Fill="#FFFDCBCA" HorizontalAlignment="Left" Height="710" Margin="540,185,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="564"/>
+        <Path x:Name="Пбровь" Data="M686,414.04 L686.5,426.58001 722.75,376.94088 782.90925,317.12087 756.54792,333.28565 719.39101,363.58237 697.29771,396.81104 z" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="113" Margin="686,315,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="194"/>
+        <Path x:Name="Лбровь" Data="M633.0434,474.60685 L635.07843,490.48625 576.78072,488.84922 557.33932,487.86626 586.55038,476.0707 z" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="17" Margin="530,475,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="96"/>
+        <Path x:Name="ЛГлаз" Data="M544.57627,567.40512 L549.64561,575.21787 560.79816,583.03062 579.04778,589.33939 608.44994,580.92625 622.64409,574.41534 631.26199,564.79823 623.61595,547.36377 600.81522,542.23598 562.5,537.57998 547.78685,544.12964 539,556.04 z" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="54" Margin="539,538,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="92"/>
+        <Path x:Name="ПГлаз" Data="M786,469.04 L793.5,487.58001 816.53571,492.0101 853.91562,488.69858 887.87347,473.38518 907.30295,452.32927 919.43328,424.78494 921.00927,407.77405 916.29965,398.50808 903.74065,393.13418 868.15681,397.62315 840.94564,405.53323 796.98913,436.18476 787.56988,449.03863 z" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="101" Margin="786,393,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="130"/>
+    </Grid>
+</Window>

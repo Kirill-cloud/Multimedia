@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ief.gif" />
+    <None Remove="logo fbi.gif" />
+    <None Remove="logo_stu.png" />
+    <None Remove="meip.png" />
+    <None Remove="mt.gif" />
+    <None Remove="pgs.gif" />
+    <None Remove="stretch_img.png" />
+    <None Remove="szd.gif" />
+    <None Remove="up.gif" />
+    <None Remove="upp.gif" />
+    <None Remove="uttk.gif" />
+    <None Remove="zf.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ief.gif" />
+    <Resource Include="logo fbi.gif" />
+    <Resource Include="logo_stu.png" />
+    <Resource Include="meip.png" />
+    <Resource Include="mt.gif" />
+    <Resource Include="pgs.gif" />
+    <Resource Include="stretch_img.png" />
+    <Resource Include="szd.gif" />
+    <Resource Include="up.gif" />
+    <Resource Include="upp.gif" />
+    <Resource Include="uttk.gif" />
+    <Resource Include="zf.gif" />
+  </ItemGroup>
+
+</Project>

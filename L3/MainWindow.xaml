@@ -1,0 +1,260 @@
+﻿<Window x:Class="L3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid  x:Name="RootGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Name="TopGrid" Grid.ColumnSpan="3" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+
+
+            <StackPanel Orientation="Horizontal">
+                <Border Width="50" Background="#FF3E44BF">
+                    <TextBlock Text="Файл" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="11"/>
+                </Border>
+                <Border Width="65" Background="#FFDDDDE4" BorderThickness=".5" BorderBrush="Black">
+                    <Grid ClipToBounds="False">
+                        <TextBlock Text="Главная" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontSize="11"/>
+                    </Grid>
+                </Border>
+                <Border Width="80">
+                    <TextBlock Text="Поделиться" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontSize="11"/>
+                </Border>
+                <Border Width="55">
+                    <TextBlock Text="Вид" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontSize="11"/>
+                </Border>
+            </StackPanel>
+            <Grid Grid.Row="1" Background="#FFDDDDE4" >
+                <StackPanel Orientation="Horizontal" Margin="0,12,0,0">
+                    <StackPanel Width="115">
+                        <Image Height="30" Source="/Lock.png" />
+                        <TextBlock FontSize="11" HorizontalAlignment="Center" TextAlignment="Center" Text="Закрепить на панели быстрого доступа" TextWrapping="WrapWithOverflow"/>
+                    </StackPanel>
+                    <StackPanel Width="75">
+                        <Grid>
+                            <Image Height="30" Source="/Notes.png" />
+                            <Image Height="30" Source="/Notes.png" Margin="10,10,0,0" />
+                        </Grid>
+                        <TextBlock FontSize="11" HorizontalAlignment="Center" TextAlignment="Center" Text="Копировать" TextWrapping="WrapWithOverflow"/>
+                    </StackPanel>
+                    <StackPanel Width="75">
+                        <Image Height="41" Source="/Folder Links 2.png" />
+                        <TextBlock FontSize="11" HorizontalAlignment="Center" TextAlignment="Center" Text="Вставить" TextWrapping="WrapWithOverflow"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="2" Background="#FFDDDDE4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="260"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Center" FontSize="11" Text="Буфер обмена" />
+            </Grid>
+        </Grid>
+
+        <Grid Name="NavigationGrid" Grid.ColumnSpan="3" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="140"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="360"/>
+            </Grid.ColumnDefinitions>
+            <WrapPanel Opacity=".5">
+                <Image Source="/pngwing.com — копия (2).png" Width="20" Height="20" Margin="10"  >
+
+                </Image>
+                <Image Source="/pngwing.com.png" Width="20" Height="20" Margin="10" Opacity=".3"/>
+                <Image Source="/pngwing.com — копия — копия.png" Width="15" Height="15" Margin="0,0,5,15"/>
+                <Image Source="/pngwing.com — копия.png" Width="20" Height="20" Margin="10"/>
+            </WrapPanel>
+            <Border Grid.Column="1" Margin="4" BorderThickness="0.3" BorderBrush="Gray" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" >
+                        <Image Source="/Folder Open.png" Width="20" Height="20" Margin="5,0" />
+                        <TextBlock FontSize="14">Этот компьютер</TextBlock>
+                        <Image Source="/pngwing.com — копия — копия — копия.png" Width="9" Height="9" Margin="0,0,4,-4" Opacity=".3" />
+                        <TextBlock FontSize="14">Рабочий стол</TextBlock>
+                        <Image Source="/pngwing.com — копия — копия — копия.png" Width="9" Height="9" Margin="0,0,4,-4" Opacity=".3" />
+                        <TextBlock FontSize="14">PNGs</TextBlock>
+                    </StackPanel>
+                    <Image Source="/pngwing.com — копия — копия.png" Width="10" Opacity=".4" Margin="0,0,5,0" Grid.Column="1" />
+                    <Border Grid.Column="2" BorderThickness="0.3" BorderBrush="Gray">
+                        <Image Source="/1401.png" Width="15" Opacity=".8" Margin="0,0,0,0"  />
+                    </Border>
+                </Grid>
+            </Border>
+            <Border Grid.Column="2" BorderThickness="0.3" Margin="6,4,10,4" BorderBrush="Gray" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="/Search.png" Width="20" Opacity=".8" Margin="10,0" />
+                    <TextBlock Grid.Column="1" VerticalAlignment="Center" Opacity="0.7">Поиск: PNGs</TextBlock>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <Expander Header="Быстрый доступ" IsExpanded="True">
+                    <StackPanel Margin="20,0,0,0">
+                        <Grid Height="24">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="24" />
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="/Folder Desktop.png" Width="24" Height="24" />
+                            <Label Content="Рабочий стол" Grid.Column="1" FontSize="12"/>
+                        </Grid>
+                        <Grid Height="24">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="24" />
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="/Folder Downloads.png" Width="24" Height="24" />
+                            <Label Content="Загрузки" Grid.Column="1" FontSize="12"/>
+                        </Grid>
+                        <Grid Height="24">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="24" />
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="/Folder Documents.png" Width="24" Height="24" />
+                            <Label Content="Документы" Grid.Column="1" FontSize="12"/>
+                        </Grid>
+                        <Grid Height="24">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="24" />
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="/Folder Pictures.png" Width="24" Height="24" />
+                            <Label Content="Изображения" Grid.Column="1" FontSize="12"/>
+                        </Grid>
+                        <Grid Height="24">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="24" />
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="/Folder Blue.png" Width="24" Height="24" />
+                            <Label Content="L1" Grid.Column="1" FontSize="12"/>
+                        </Grid>
+                        <Grid Height="24">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="24" />
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="/Folder Blue.png" Width="24" Height="24" />
+                            <Label Content="Работа" Grid.Column="1" FontSize="12"/>
+                        </Grid>
+                        <Grid Height="24">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="24" />
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="/Folder Blue.png" Width="24" Height="24" />
+                            <Label Content="Anime" Grid.Column="1" FontSize="12"/>
+                        </Grid>
+                    </StackPanel>
+                </Expander>
+                <Expander Header="Этот компьютер" >
+                    <StackPanel Margin="20,0,0,0">
+                        <Grid Height="24">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="24" />
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="/Folder OneDrive.png" Width="24" Height="24" />
+                            <Label Content="OneDrive" Grid.Column="1" FontSize="12"/>
+                        </Grid>
+                        <Grid Height="24">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="24" />
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="/Folder 3D.png" Width="24" Height="24" />
+                            <Label Content="Объемные объекты" Grid.Column="1" FontSize="12"/>
+                        </Grid>
+                        <Grid Height="24">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="24" />
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="/Hardrive Windows.png" Width="24" Height="24" />
+                            <Label Content="Локальный диск (C:)" Grid.Column="1" FontSize="12"/>
+                        </Grid>
+                    </StackPanel>
+                </Expander>
+            </StackPanel>
+        </ScrollViewer>
+        <ScrollViewer Grid.Row="2" Grid.Column="1" VerticalScrollBarVisibility="Auto">
+            <WrapPanel>
+                <StackPanel Width="150" Height="120" Margin="10">
+                    <Image Source="/2LocrGFa5x4.jpg" Height="90"   />
+                    <Label HorizontalAlignment="Center" Margin="0,5,0,0" Content="Рыбов.png"/>
+                </StackPanel>
+                <Border Background="AliceBlue" BorderBrush="#FF0061B6" BorderThickness="0.2">
+                    <StackPanel Width="150" Margin="10">
+                        <Image Source="/Снимок экрана (1).png" Height="90"  />
+                        <Label HorizontalAlignment="Center" Margin="0,5,0,0" Content="Anime.png"/>
+                    </StackPanel>
+                </Border>
+                <StackPanel Width="150" Height="120" Margin="10">
+                    <Image Source="/iAbthNsLZ-g.jpg" Height="90"   />
+                    <Label HorizontalAlignment="Center" Margin="0,5,0,0" Content="Моя жизнь.png"/>
+                </StackPanel>
+                <StackPanel Width="150" Height="120" Margin="10">
+                    <Image Source="/301.jpg" Height="90"   />
+                    <Label HorizontalAlignment="Center" Margin="0,5,0,0" Content="Хабаров.png"/>
+                </StackPanel>
+            </WrapPanel>
+        </ScrollViewer>
+
+        <Image Source="/Снимок экрана (1).png" Grid.Row="2" Grid.Column="2"/>
+
+        <Grid Name="ButtomGrid" Grid.ColumnSpan="3" Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Элементов: 101" Margin="15,2" Foreground="#FF025699" />
+            <TextBlock Text="Выбран 1 элемент: 30,9 КБ" Grid.Column="1" Margin="0,2" Foreground="#FF025699" />
+
+            <Button Grid.Column="2" Background="#fff" BorderThickness="0" >
+                <Image Source="/Tasks.png"  />
+            </Button>
+            <Button Grid.Column="3" Background="#FF31C5DC" >
+                <Image Source="/Libray Pictures.png"  />
+            </Button>
+
+
+        </Grid>
+        <GridSplitter Name="LeftWrapper" Grid.Column="0" Grid.Row="2" Width="3"></GridSplitter>
+        <GridSplitter Name="RightWrapper" Grid.Column="1" Grid.Row="2" Width="3"></GridSplitter>
+    </Grid>
+</Window>
