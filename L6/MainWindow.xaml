@@ -3,10 +3,49 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wpfTool="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
         xmlns:local="clr-namespace:L6"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Background="#888" >
+            <StackPanel Orientation="Horizontal" >
+                <Grid Width="75">
+                    <Ellipse  Width="{Binding ElementName=Size_Slider, Path=Value}" 
+                              Height="{Binding ElementName=Size_Slider, Path=Value}" 
+                              Fill="{Binding ElementName=ColorPicker, Path=SelectedColorText}" />
+                </Grid>
+                <StackPanel Height="45" >
+                    <TextBlock Text="{Binding ElementName=Size_Slider, Path=Value, StringFormat=0.00}"></TextBlock>
+                    <ComboBox >
+                        <ComboBoxItem >
+                            <Slider x:Name="Size_Slider" Value="{Binding DrawingAttributes.Width}" Minimum=".1" Maximum="75" Width="200" />
+                        </ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="25" >
+                <StackPanel.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="Margin" Value="5,0,0,0"/>
+                        <Setter Property="Background" Value="BlanchedAlmond"/>
+                    </Style>
+                </StackPanel.Resources>
+                <wpfTool:ColorPicker x:Name="ColorPicker" Width="45"  UsingAlphaChannel="False" SelectedColor="{Binding DrawingAttributes.Color}"/>
+                <Button Click="Button_Click">Ink</Button>
+                <Button Click="Button_Click">GestureOnly</Button>
+                <Button Click="Button_Click">InkAndGesture</Button>
+                <Button Click="Button_Click">EraseByStroke</Button>
+                <Button Click="Button_Click">EraseByPoint</Button>
+                <Button Click="Button_Click">Select</Button>
+                <Button Click="Button_Click">None</Button>
+            </StackPanel>
 
+        </StackPanel>
+        <InkCanvas Grid.Row="1" x:Name="Inker" DefaultDrawingAttributes="{Binding DrawingAttributes}"  EditingMode="{Binding EditingMode}" />
     </Grid>
 </Window>
