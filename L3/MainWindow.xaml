@@ -25,41 +25,54 @@
                 <RowDefinition />
                 <RowDefinition Height="20" />
             </Grid.RowDefinitions>
-
-
             <StackPanel Orientation="Horizontal">
-                <Border Width="50" Background="#FF3E44BF">
-                    <TextBlock Text="Файл" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="11"/>
-                </Border>
-                <Border Width="65" Background="#FFDDDDE4" BorderThickness=".5" BorderBrush="Black">
-                    <Grid ClipToBounds="False">
-                        <TextBlock Text="Главная" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontSize="11"/>
-                    </Grid>
-                </Border>
-                <Border Width="80">
-                    <TextBlock Text="Поделиться" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontSize="11"/>
-                </Border>
-                <Border Width="55">
-                    <TextBlock Text="Вид" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontSize="11"/>
-                </Border>
+
+                <Button Background="Transparent" BorderThickness="0">
+                    <Border Width="50" Background="#FF3E44BF">
+                        <TextBlock Text="Файл" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="11"/>
+                    </Border>
+                </Button>
+                <Button Background="Transparent" BorderThickness="0">
+                    <Border Width="65" Background="#FFDDDDE4" BorderThickness=".5" BorderBrush="Black">
+                        <Grid ClipToBounds="False">
+                            <TextBlock Text="Главная" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontSize="11"/>
+                        </Grid>
+                    </Border>
+                </Button>
+                <Button Background="Transparent" BorderThickness="0">
+                    <Border Width="80">
+                        <TextBlock Text="Поделиться" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontSize="11"/>
+                    </Border>
+                </Button>
+                <Button Background="Transparent" BorderThickness="0">
+                    <Border Width="55">
+                        <TextBlock Text="Вид" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontSize="11"/>
+                    </Border>
+                </Button>
             </StackPanel>
             <Grid Grid.Row="1" Background="#FFDDDDE4" >
                 <StackPanel Orientation="Horizontal" Margin="0,12,0,0">
-                    <StackPanel Width="115">
-                        <Image Height="30" Source="/Lock.png" />
-                        <TextBlock FontSize="11" HorizontalAlignment="Center" TextAlignment="Center" Text="Закрепить на панели быстрого доступа" TextWrapping="WrapWithOverflow"/>
-                    </StackPanel>
-                    <StackPanel Width="75">
-                        <Grid>
-                            <Image Height="30" Source="/Notes.png" />
-                            <Image Height="30" Source="/Notes.png" Margin="10,10,0,0" />
-                        </Grid>
-                        <TextBlock FontSize="11" HorizontalAlignment="Center" TextAlignment="Center" Text="Копировать" TextWrapping="WrapWithOverflow"/>
-                    </StackPanel>
-                    <StackPanel Width="75">
-                        <Image Height="41" Source="/Folder Links 2.png" />
-                        <TextBlock FontSize="11" HorizontalAlignment="Center" TextAlignment="Center" Text="Вставить" TextWrapping="WrapWithOverflow"/>
-                    </StackPanel>
+                    <Button Background="Transparent" BorderThickness="0">
+                        <StackPanel Width="115">
+                            <Image Height="30" Source="/Lock.png" />
+                            <TextBlock FontSize="11" HorizontalAlignment="Center" TextAlignment="Center" Text="Закрепить на панели быстрого доступа" TextWrapping="WrapWithOverflow"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Background="Transparent" BorderThickness="0">
+                        <StackPanel Width="75">
+                            <Grid>
+                                <Image Height="30" Source="/Notes.png" />
+                                <Image Height="30" Source="/Notes.png" Margin="10,10,0,0" />
+                            </Grid>
+                            <TextBlock FontSize="11" HorizontalAlignment="Center" TextAlignment="Center" Text="Копировать" TextWrapping="WrapWithOverflow"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Background="Transparent" BorderThickness="0">
+                        <StackPanel Width="75">
+                            <Image Height="41" Source="/Folder Links 2.png" />
+                            <TextBlock FontSize="11" HorizontalAlignment="Center" TextAlignment="Center" Text="Вставить" TextWrapping="WrapWithOverflow"/>
+                        </StackPanel>
+                    </Button>
                 </StackPanel>
             </Grid>
             <Grid Grid.Row="2" Background="#FFDDDDE4">
@@ -78,32 +91,75 @@
                 <ColumnDefinition Width="360"/>
             </Grid.ColumnDefinitions>
             <WrapPanel Opacity=".5">
-                <Image Source="/pngwing.com — копия (2).png" Width="20" Height="20" Margin="10"  >
 
-                </Image>
-                <Image Source="/pngwing.com.png" Width="20" Height="20" Margin="10" Opacity=".3"/>
-                <Image Source="/pngwing.com — копия — копия.png" Width="15" Height="15" Margin="0,0,5,15"/>
-                <Image Source="/pngwing.com — копия.png" Width="20" Height="20" Margin="10"/>
+                <Button Background="White" BorderThickness="0">
+                    <Image Source="/pngwing.com — копия (2).png" Width="20" Height="20" Margin="10" />
+                </Button>
+                <Button Background="White" BorderThickness="0">
+                    <Image Source="/pngwing.com.png" Width="20" Height="20" Margin="10" Opacity=".3"/>
+                </Button>
+                <Button Background="White" BorderThickness="0">
+                    <Image Source="/pngwing.com — копия — копия.png" Width="15" Height="15" Margin="0,0,5,15"/>
+                </Button>
             </WrapPanel>
             <Border Grid.Column="1" Margin="4" BorderThickness="0.3" BorderBrush="Gray" >
+
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition Width="20"/>
                         <ColumnDefinition Width="30"/>
                     </Grid.ColumnDefinitions>
-                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" >
-                        <Image Source="/Folder Open.png" Width="20" Height="20" Margin="5,0" />
-                        <TextBlock FontSize="14">Этот компьютер</TextBlock>
-                        <Image Source="/pngwing.com — копия — копия — копия.png" Width="9" Height="9" Margin="0,0,4,-4" Opacity=".3" />
-                        <TextBlock FontSize="14">Рабочий стол</TextBlock>
-                        <Image Source="/pngwing.com — копия — копия — копия.png" Width="9" Height="9" Margin="0,0,4,-4" Opacity=".3" />
-                        <TextBlock FontSize="14">PNGs</TextBlock>
-                    </StackPanel>
-                    <Image Source="/pngwing.com — копия — копия.png" Width="10" Opacity=".4" Margin="0,0,5,0" Grid.Column="1" />
-                    <Border Grid.Column="2" BorderThickness="0.3" BorderBrush="Gray">
-                        <Image Source="/1401.png" Width="15" Opacity=".8" Margin="0,0,0,0"  />
-                    </Border>
+                    <ComboBox Background="White" SelectedIndex="0">
+                        <ComboBoxItem Background="White">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" >
+                                <Image Source="/Folder Open.png" Width="20" Height="20" Margin="5,0" />
+                                <TextBlock FontSize="14">Этот компьютер</TextBlock>
+                                <Image Source="/pngwing.com — копия — копия — копия.png" Width="9" Height="9" Margin="0,0,4,-4" Opacity=".3" />
+                                <TextBlock FontSize="14">Рабочий стол</TextBlock>
+                                <Image Source="/pngwing.com — копия — копия — копия.png" Width="9" Height="9" Margin="0,0,4,-4" Opacity=".3" />
+                                <TextBlock FontSize="14">PNGs</TextBlock>
+                            </StackPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem Background="White">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" >
+                                <Image Source="/Folder Open.png" Width="20" Height="20" Margin="5,0" />
+                                <TextBlock FontSize="14">Этот компьютер</TextBlock>
+                                <Image Source="/pngwing.com — копия — копия — копия.png" Width="9" Height="9" Margin="0,0,4,-4" Opacity=".3" />
+                                <TextBlock FontSize="14">Документы</TextBlock>
+                                <Image Source="/pngwing.com — копия — копия — копия.png" Width="9" Height="9" Margin="0,0,4,-4" Opacity=".3" />
+                                <TextBlock FontSize="14">Технологии</TextBlock>
+                            </StackPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem Background="White">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" >
+                                <Image Source="/Folder Open.png" Width="20" Height="20" Margin="5,0" />
+                                <TextBlock FontSize="14">С:\</TextBlock>
+                                <Image Source="/pngwing.com — копия — копия — копия.png" Width="9" Height="9" Margin="0,0,4,-4" Opacity=".3" />
+                                <TextBlock FontSize="14">Users</TextBlock>
+                                <Image Source="/pngwing.com — копия — копия — копия.png" Width="9" Height="9" Margin="0,0,4,-4" Opacity=".3" />
+                                <TextBlock FontSize="14">Kirill</TextBlock>
+                            </StackPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem Background="White">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" >
+                                <Image Source="/Folder Open.png" Width="20" Height="20" Margin="5,0" />
+                                <TextBlock FontSize="14">Этот компьютер</TextBlock>
+                                <Image Source="/pngwing.com — копия — копия — копия.png" Width="9" Height="9" Margin="0,0,4,-4" Opacity=".3" />
+                                <TextBlock FontSize="14">Изображения</TextBlock>
+                                <Image Source="/pngwing.com — копия — копия — копия.png" Width="9" Height="9" Margin="0,0,4,-4" Opacity=".3" />
+                                <TextBlock FontSize="14">Anime girls</TextBlock>
+                            </StackPanel>
+                        </ComboBoxItem>
+                    </ComboBox>
+                    <Button Background="White" BorderThickness="0" Grid.Column="1" >
+                        <Image Source="/pngwing.com — копия — копия.png" Width="10" Opacity=".4" Margin="0,0,0,0"/>
+                    </Button>
+                    <Button Background="White" BorderThickness="0" Grid.Column="2" >
+                        <Border BorderThickness="0.3" BorderBrush="Gray">
+                            <Image Source="/1401.png" Width="15" Opacity=".8" Margin="0,0,0,0"  />
+                        </Border>
+                    </Button>
                 </Grid>
             </Border>
             <Border Grid.Column="2" BorderThickness="0.3" Margin="6,4,10,4" BorderBrush="Gray" >
@@ -113,7 +169,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Image Source="/Search.png" Width="20" Opacity=".8" Margin="10,0" />
-                    <TextBlock Grid.Column="1" VerticalAlignment="Center" Opacity="0.7">Поиск: PNGs</TextBlock>
+                    <TextBox Grid.Column="1" VerticalAlignment="Center" Opacity="0.7" BorderThickness="0" Height="27" ToolTip="Поиск: PNGs" />
                 </Grid>
             </Border>
         </Grid>
