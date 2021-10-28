@@ -1,0 +1,58 @@
+.player {
+  height: 450px;
+  z-index: 1;
+}
+
+body {
+  width: 600px;
+  height: 450px;
+}
+
+body:hover .bottomBar {
+  display: block;
+}
+
+#progress {
+  width: 0px;
+  height: 5px;
+  background-color: white;
+}
+.progressbar {
+  width: 600px;
+  height: 5px;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+.bottomBar {
+  position: absolute;
+  top: 412px;
+  width: 600px;
+  display: none;
+}
+
+.ControlsLine {
+  justify-content: space-between;
+  padding: 5px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+}
+
+.inliner {
+  display: inline-block;
+  color: white;
+  margin: 5px;
+}
+
+#timer {
+  color: white;
+  width: 28px;
+}
+
+div {
+  user-select: none;
+}

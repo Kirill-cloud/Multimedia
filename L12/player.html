@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Player</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="player.js"></script>
+  </head>
+
+  <body>
+    <video
+      class="player"
+      src="vid.mp4"
+      ontimeupdate="tick()"
+      onclick="playClick()"
+    ></video>
+
+    <div class="bottomBar">
+      <div onclick="rewind(event)" class="progressbar clickable">
+        <div id="progress"></div>
+      </div>
+      <div class="ControlsLine">
+        <div>
+          <div
+            class="inliner clickable"
+            id="playButton"
+            onclick="playClick()"
+            style="width: 20px"
+          >
+            ▶
+          </div>
+          <div class="inliner" id="timeElapsed">00:00:00</div>
+          <div class="inliner clickable" onclick="stop()">⏹︎</div>
+        </div>
+
+        <div>
+          <div class="inliner" id="endTime">00:00:00</div>
+          <div class="inliner clickable" onclick="speedDown()">⏴</div>
+          <div id="timer" class="inliner clickable" onclick="speedNormalize()">
+            1
+          </div>
+          <div class="inliner clickable" onclick="speedUp()">⏵︎</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
